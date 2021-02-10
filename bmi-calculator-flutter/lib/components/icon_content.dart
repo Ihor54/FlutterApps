@@ -1,10 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-const labelTextStyle = TextStyle(
-  fontSize: 18.0,
-  color: Color(0xFF8e8f99),
-);
+import '../constants.dart';
 
 class IconContent extends StatelessWidget {
   final IconData icon;
@@ -23,7 +20,7 @@ class IconContent extends StatelessWidget {
         SizedBox(height: 15.0),
         Text(
           label.toUpperCase(),
-          style: labelTextStyle,
+          style: kLabelTextStyle,
         )
       ],
     );
